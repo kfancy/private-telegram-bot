@@ -1,0 +1,17 @@
+{ "en": { "notAuthorizedUserError": "Sorry, this is a private bot.\nYou need an authorization to use it"
+        , "notCommandError": "Only commands are allowed.\nStart with '/' char!"
+        , "unknownCommandError": "I don't know this command.\nWhat do you want from me?"
+        , "operationCancelledError": "Operation has been cancelled"
+        , "nothingToCancelError": "Sorry, nothing to cancel"
+        , "commandTimeoutError": "command has been cancelled by timeout"
+        , "commandOnlyForOwnerError": "Sorry, this command is only for bot owner"
+        }
+, "es": { "notAuthorizedUserError": "Lo siento, este es un bot privado.\nNecesitas autorizacion para usarlo"
+        , "notCommandError": "Solo se permite usar comandos.\nTodos los comandos empiezan por /"
+        , "unknownCommandError": "No conozco ese comando.\nQue quieres de mi?"
+        , "operationCancelledError": "La operacion ha sido cancelada"
+        , "nothingToCancelError": "Lo siento, no hay nada que cancelar"
+        , "commandTimeoutError": "comando ha sido cancelado por timeout"
+        , "commandOnlyForOwnerError": "Lo siento, ese comando es solo para el dueño del bot"
+        }
+}

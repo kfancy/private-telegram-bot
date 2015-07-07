@@ -1,0 +1,29 @@
+{ "enabled": true
+, "defaultLanguage": "es"
+, "transports": [
+    {
+      "type":"Console"
+    , "enabled": true
+    , "colorize": true
+    , "level": "debug"
+    , "formatter": "consoleFormatter"
+    }
+  , {
+      "type":"File"
+    , "enabled": false
+    , "filename": "./bot.log"
+    , "json": false
+    , "formatter": "fileFormatterWithTimestamp"
+    , "level": "info"
+    }
+  , {
+      "type":"DailyRotateFile"
+    , "enabled": false
+    , "filename": "./bot.log"
+    , "datePattern": ".yyyyMMdd"
+    , "json": false
+    , "formatter": "fileFormatterWithTimestamp"
+    , "level": "info"
+    }
+  ]
+}

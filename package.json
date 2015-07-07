@@ -1,0 +1,18 @@
+{
+  "name": "private-telegram-bot"
+, "version": "0.0.1"
+, "description": "Selective access telegram bots builder"
+, "keywords": ["telegram", "bot", "private", "selective", "builder"]
+, "author": "Guillermo Peña <guillermo.pena.cardano@gmail.com>"
+, "repository": { "type": "git", "url": "git://github.com/GuillermoPena/private-telegram-bot.git" }
+, "bugs": { "url": "http://github.com/GuillermoPena/private-telegram-bot/issues/" }
+, "dependencies": {
+    "winston": ">=1.0.0"
+  , "jsonfile-config-manager": ">=0.0.2"
+  }
+, "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
+, "main": "./lib/private-telegram-bot.js"
+}
