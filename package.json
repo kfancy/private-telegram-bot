@@ -7,12 +7,13 @@
 , "repository": { "type": "git", "url": "git://github.com/GuillermoPena/private-telegram-bot.git" }
 , "bugs": { "url": "http://github.com/GuillermoPena/private-telegram-bot/issues/" }
 , "dependencies": {
-    "winston": ">=1.0.0"
-  , "jsonfile-config-manager": ">=0.0.2"
-  , "easylogger": ">= 0.0.1"
-  , "chokidar": ">= 0.1.0"
+    "winston": ">=1.0.1"
+  , "jsonfile-config-manager": ">=0.0.8"
+  , "easylogger": ">= 0.0.3"
+  , "chokidar": ">= 1.0.3"
   , "multiple-contains": ">=0.0.3"
-  , "telegram-bot-api": ">=0.2.0"
+  , "telegram-bot-api": ">=0.3.0"
+  , "easywizard": ">=0.2.0"
   }
 , "devDependencies": {
     "mocha": "*",

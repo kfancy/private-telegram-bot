@@ -1,0 +1,52 @@
+#!/usr/bin/node
+
+// Libraries
+var contains = require("multiple-contains") // Contains library
+var path = require('path')                  // Path utils library
+var EasyWizard = require('easywizard')      // Easy Wizard library
+
+// Loading Configuration
+var cm = require('jsonfile-config-manager')
+var configPath = path.resolve(__dirname, '../config/')
+cm.addFile(path.join(configPath, 'users.json'), null, false)
+cm.addFile(path.join(configPath, 'bot.json'), null, false)
+cm.addFile(path.join(configPath, 'literals.json'), null, false)
+
+// Variables
+var users    = cm.config.users
+var language = cm.config.bot.defaultLanguage
+var literal  = cm.config.literals[language]
+var wizard   = path.join(configPath, 'adduser.' + language + ".wizard")
+var ew       = new EasyWizard()
+var response
+
+
+// Checking step
+ew.emitter.once('paused', function() {
+
+  // Getting response object
+	response = ew.getObject()
+
+  // Checking if friend username is empty
+  var userToRemoveIdx = contains(users, response.friendname, 'index')
+  if (!response.friendname) {
+    console.log(literal.emptyUsernameError)
+    ew.setNextStep("1")
+
+  // Checking if user exists
+  } else if (userToRemoveIdx < 0) {
+    console.log(literal.userNotFoundError)
+
+  // Removing user and updating file
+  } else {
+    users.splice(userToRemoveIdx, 1)
+    cm.updateBranchFile('users')
+  	console.log(literal.removeUserSuccessMessage)
+  }
+
+  // Show must go on...
+  ew.emitter.emit('continue')
+})
+
+console.log(literal.removeUserWellcomeMessage)
+setTimeout(function(){ ew.run(wizard) }, 200)

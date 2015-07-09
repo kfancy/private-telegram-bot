@@ -15,5 +15,21 @@
               , "longDescription": "Cancel current running command"
               }
     }
+  , { "name": "adduser"
+      , "es": { "shortDescription": "Deja que un amigo use tu bot"
+              , "longDescription": "Autoriza a otro usuario a ejecutar los comandos publicos de tu bot"
+              }
+      , "en": { "shortDescription": "Allow to a friend to use your bot"
+              , "longDescription": "Authorize to another user to run your public commands of your bot"
+              }
+    }
+    , { "name": "removeuser"
+        , "es": { "shortDescription": "Revoca el permiso de uso de un usuario"
+                , "longDescription": "Elimina el permiso de uso a un usuario.\nNo podra usar tu bot"
+                }
+        , "en": { "shortDescription": "Revoke execute permission to a user"
+                , "longDescription": "Remove execute permission of a user.\nIt can't longer use your bot"
+                }
+      }
   ]
 }

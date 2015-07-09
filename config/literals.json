@@ -7,6 +7,12 @@
         , "commandOnlyForOwnerError": "Sorry, this command is only for bot owner"
         , "noHelpError": "Sorry, I can't help you.\nI haven't any info about this command"
         , "wellcomeMessage": "Hi @%username%.\nWellcome to %botname%."
+        , "emptyUsernameError": "Your friend does not have a name?"
+        , "userAuthorizedError": "Needless to add to your friend.\nHe was among the elect!"
+        , "addUserSuccessMessage": "Done! Currently, your friend can run all your public commands"
+        , "addUserWellcomeMessage": "Do you want to allow to a friend use your bot?\nI need his Telegram username for this."
+        , "removeUserSuccessMessage": "Done! User has been removed"
+        , "removeUserWellcomeMessage": "Do you want remove a user?"
         }
 , "es": { "notAuthorizedUserError": "Lo siento, este es un bot privado.\nNecesitas autorizacion para usarlo"
         , "notCommandError": "Solo se permite usar comandos.\nTodos los comandos empiezan por /"
@@ -17,5 +23,11 @@
         , "commandOnlyForOwnerError": "Lo siento, ese comando es solo para el dueño del bot"
         , "noHelpError": "Lo, siento, no puedo ayudarte.\nNo tengo ninguna informacion sobre ese comando"
         , "wellcomeMessage": "Hola @%username%.\nBienvenido a %botname%."
+        , "emptyUsernameError": "Tu amigo no tiene nombre?"
+        , "userAuthorizedError": "No hace falta añadir a tu amigo.\nYa estaba entre los elegidos!"
+        , "addUserSuccessMessage": "Hecho! Tu amigo ya puede ejecutar todos los comandos publicos"
+        , "addUserWellcomeMessage": "Quieres que un amigo pueda usar tu bot?\nPara eso necesito su usuario de Telegram."
+        , "removeUserSuccessMessage": "Hecho! Usuario eliminado"
+        , "removeUserWellcomeMessage": "Quieres eliminar un usuario?"
         }
 }

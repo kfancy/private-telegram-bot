@@ -1,0 +1,9 @@
+{
+	"steps": [{
+    					"id": "1"
+    				,	"question": "Came on, give me his username: "
+    				,	"type": "string"
+    				,	"property": "friendname"
+    				,	"pause": true
+    			 }]
+}
