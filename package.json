@@ -9,6 +9,10 @@
 , "dependencies": {
     "winston": ">=1.0.0"
   , "jsonfile-config-manager": ">=0.0.2"
+  , "easylogger": ">= 0.0.1"
+  , "chokidar": ">= 0.1.0"
+  , "multiple-contains": ">=0.0.3"
+  , "telegram-bot-api": ">=0.2.0"
   }
 , "devDependencies": {
     "mocha": "*",

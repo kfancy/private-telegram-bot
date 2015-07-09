@@ -11,15 +11,15 @@
   , {
       "type":"File"
     , "enabled": false
-    , "filename": "./bot.log"
+    , "filename": "/var/tmp/private.bot.log"
     , "json": false
     , "formatter": "fileFormatterWithTimestamp"
     , "level": "info"
     }
   , {
       "type":"DailyRotateFile"
-    , "enabled": false
-    , "filename": "./bot.log"
+    , "enabled": true
+    , "filename": "/var/tmp/private.bot"
     , "datePattern": ".yyyyMMdd"
     , "json": false
     , "formatter": "fileFormatterWithTimestamp"

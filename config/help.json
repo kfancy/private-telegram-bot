@@ -1,0 +1,19 @@
+{ "commands":
+  [ { "name": "help"
+    , "es": { "shortDescription": "Ayuda. Escribe /help y un comando y obtendras ayuda detallada"
+            , "longDescription": "Ayuda. Escribe /help y un comando y obtendras ayuda detallada"
+            }
+    , "en": { "shortDescription": "Help. Send /help with a command for detailed help"
+            , "longDescription": "Help. Send /help with a command for detailed help"
+            }
+    }
+  , { "name": "cancel"
+      , "es": { "shortDescription": "Cancela el comando en ejecucion"
+              , "longDescription": "Interrumpe el commando que este corriendo en ese instante"
+              }
+      , "en": { "shortDescription": "Cancel current running command"
+              , "longDescription": "Cancel current running command"
+              }
+    }
+  ]
+}

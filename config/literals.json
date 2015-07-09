@@ -5,6 +5,8 @@
         , "nothingToCancelError": "Sorry, nothing to cancel"
         , "commandTimeoutError": "command has been cancelled by timeout"
         , "commandOnlyForOwnerError": "Sorry, this command is only for bot owner"
+        , "noHelpError": "Sorry, I can't help you.\nI haven't any info about this command"
+        , "wellcomeMessage": "Hi @%username%.\nWellcome to %botname%."
         }
 , "es": { "notAuthorizedUserError": "Lo siento, este es un bot privado.\nNecesitas autorizacion para usarlo"
         , "notCommandError": "Solo se permite usar comandos.\nTodos los comandos empiezan por /"
@@ -13,5 +15,7 @@
         , "nothingToCancelError": "Lo siento, no hay nada que cancelar"
         , "commandTimeoutError": "comando ha sido cancelado por timeout"
         , "commandOnlyForOwnerError": "Lo siento, ese comando es solo para el dueño del bot"
+        , "noHelpError": "Lo, siento, no puedo ayudarte.\nNo tengo ninguna informacion sobre ese comando"
+        , "wellcomeMessage": "Hola @%username%.\nBienvenido a %botname%."
         }
 }
