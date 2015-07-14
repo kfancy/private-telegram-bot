@@ -19,6 +19,7 @@ var literal  = cm.config.literals[language]
 var wizard   = path.join(configPath, 'adduser.' + language + ".wizard")
 var ew       = new EasyWizard()
 var response
+var timeout
 
 
 // Checking step
@@ -48,5 +49,11 @@ ew.emitter.once('paused', function() {
   ew.emitter.emit('continue')
 })
 
+// Checking final step
+ew.emitter.once('end', function() {
+	clearTimeout(timeout)
+	process.exit(0)
+})
+
 console.log(literal.removeUserWellcomeMessage)
-setTimeout(function(){ ew.run(wizard) }, 200)
+timeout = setTimeout(function(){ ew.run(wizard) }, 200)

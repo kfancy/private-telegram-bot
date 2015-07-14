@@ -19,6 +19,7 @@ var literal  = cm.config.literals[language]
 var wizard   = path.join(configPath, 'adduser.' + language + ".wizard")
 var ew       = new EasyWizard()
 var response
+var timeout
 
 
 // Checking step
@@ -31,21 +32,31 @@ ew.emitter.once('paused', function() {
   if (!response.friendname) {
     console.log(literal.emptyUsernameError)
     ew.setNextStep("1")
+		ew.emitter.emit('continue')
+		return
+	}
 
   // Checking if user was included in array previously
-  } else if (contains(users, response.friendname, 'exists')) {
+  if (contains(users, response.friendname, 'exists')) {
     console.log(literal.userAuthorizedError)
+		ew.emitter.emit('continue')
+		return
+	}
 
   // Adding new user and updating file
-  } else {
-    users.push(response.friendname)
-    cm.updateBranchFile('users')
-  	console.log(literal.addUserSuccessMessage)
-  }
-
-  // Show must go on...
+  users.push(response.friendname)
+  cm.updateBranchFile('users')
+  console.log(literal.addUserSuccessMessage)
   ew.emitter.emit('continue')
+
 })
 
-console.log(literal.addUserWellcomeMessage)
-setTimeout(function(){ ew.run(wizard) }, 200)
+// Checking final step
+ew.emitter.once('end', function() {
+	clearTimeout(timeout)
+	process.exit(0)
+})
+
+
+console.log(literal.addUserWellcomeMessage + '.')
+timeout = setTimeout(function(){ ew.run(wizard) }, 200)

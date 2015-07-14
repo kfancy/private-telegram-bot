@@ -1,11 +1,10 @@
 { "enabled": true
-, "defaultLanguage": "es"
 , "transports": [
     {
       "type":"Console"
     , "enabled": true
-    , "colorize": true
-    , "level": "debug"
+    , "colorize": false
+    , "level": "info"
     , "formatter": "consoleFormatter"
     }
   , {
@@ -18,7 +17,7 @@
     }
   , {
       "type":"DailyRotateFile"
-    , "enabled": true
+    , "enabled": false
     , "filename": "/var/tmp/private.bot"
     , "datePattern": ".yyyyMMdd"
     , "json": false

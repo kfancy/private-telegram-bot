@@ -10,9 +10,10 @@
         , "emptyUsernameError": "Your friend does not have a name?"
         , "userAuthorizedError": "Needless to add to your friend.\nHe was among the elect!"
         , "addUserSuccessMessage": "Done! Currently, your friend can run all your public commands"
-        , "addUserWellcomeMessage": "Do you want to allow to a friend use your bot?\nI need his Telegram username for this."
+        , "addUserWellcomeMessage": "Do you want to allow to a friend use your bot?\nI need his Telegram username for this"
         , "removeUserSuccessMessage": "Done! User has been removed"
         , "removeUserWellcomeMessage": "Do you want remove a user?"
+        , "userNotFoundError": "This user doesn't exist"
         }
 , "es": { "notAuthorizedUserError": "Lo siento, este es un bot privado.\nNecesitas autorizacion para usarlo"
         , "notCommandError": "Solo se permite usar comandos.\nTodos los comandos empiezan por /"
@@ -26,8 +27,9 @@
         , "emptyUsernameError": "Tu amigo no tiene nombre?"
         , "userAuthorizedError": "No hace falta añadir a tu amigo.\nYa estaba entre los elegidos!"
         , "addUserSuccessMessage": "Hecho! Tu amigo ya puede ejecutar todos los comandos publicos"
-        , "addUserWellcomeMessage": "Quieres que un amigo pueda usar tu bot?\nPara eso necesito su usuario de Telegram."
+        , "addUserWellcomeMessage": "Quieres que un amigo pueda usar tu bot?\nPara eso necesito su usuario de Telegram"
         , "removeUserSuccessMessage": "Hecho! Usuario eliminado"
         , "removeUserWellcomeMessage": "Quieres eliminar un usuario?"
+        , "userNotFoundError": "Ese usuario no existe"
         }
 }

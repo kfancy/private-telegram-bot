@@ -1,4 +1,4 @@
-{ "publicScriptsPath": "/home/guiller/code/private-telegram-bot/publicScripts/"
-, "adminScriptsPath": "/home/guiller/code/private-telegram-bot/adminScripts/"
-, "commandTimeout": 120000
+{ "publicScriptsPath": "../publicScripts/"
+, "adminScriptsPath": "../adminScripts/"
+, "commandTimeout": 60000
 }
