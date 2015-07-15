@@ -19,7 +19,8 @@ Before use it you must create a bot in Telegram bot platform. It’s very easy:
 	- After bot creation, @botFather’ll give you a token. Save it! Its very important!
 
 More info here: https://core.telegram.org/bots
-With token of your new bot, edit /config/bot.json and add your token value to ‘token’ property
+With token of your new bot, edit /config/bot.json and add your token value to ‘token’ property.
+Also, add in the same file, your Telegram alias or username (without '@') in 'owner' property.
 
 Everything is ready… run with: ./private-telegram-bot.js
 Now you can launch commands from your Telegram bot, from your mobile. Send /help to see which commands you have ready to run.

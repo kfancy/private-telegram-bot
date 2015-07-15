@@ -14,6 +14,10 @@
         , "removeUserSuccessMessage": "Done! User has been removed"
         , "removeUserWellcomeMessage": "Do you want remove a user?"
         , "userNotFoundError": "This user doesn't exist"
+        , "wrongTokenError": "Something is worng with this bot token. Check it in bot.json file"
+        , "tokenNotFoundError": "Token not found. Add your bot token in 'token' property in bot.json file"
+        , "ownerNotFoundError": "Bot owner not found. Add your Telegram alias (without '@') in 'owner' property in bot.json file"
+        , "unknownLanguageError": "Which language do you speak? I don't understand you\nI speak english(en) and spanish(es)\nCheck your default language in your bot config file (bot.json)"
         }
 , "es": { "notAuthorizedUserError": "Lo siento, este es un bot privado.\nNecesitas autorizacion para usarlo"
         , "notCommandError": "Solo se permite usar comandos.\nTodos los comandos empiezan por /"
@@ -31,5 +35,9 @@
         , "removeUserSuccessMessage": "Hecho! Usuario eliminado"
         , "removeUserWellcomeMessage": "Quieres eliminar un usuario?"
         , "userNotFoundError": "Ese usuario no existe"
+        , "wrongTokenError": "Algo va mal con ese token. Compruebalo en el fichero bot.json"
+        , "tokenNotFoundError": "Token no encontrado. Añade tu token en la propiedad 'token' de bot.json"
+        , "ownerNotFoundError": "Propietario del bot no encontrado. Añade tu alias de Telegram (sin '@') en la propiedad 'owner' de bot.json"
+        , "unknownLanguageError": "Que lengua hablas? No te entiendo\nSolo hablo ingles(en) y español(es)\nComprueba tu lenguaje por defecto en el fichero de configuracion del bot (bot.json)"
         }
 }
