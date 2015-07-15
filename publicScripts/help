@@ -1,0 +1,35 @@
+#!/usr/bin/node
+
+var contains = require("multiple-contains") // Contains library
+var path = require('path')
+
+// Loading Configuration
+var cm = require('jsonfile-config-manager')
+var configPath = path.resolve(__dirname, '../config/')
+cm.addFile(path.join(configPath, 'help.json'), null, false)
+cm.addFile(path.join(configPath, 'bot.json'), null, false)
+cm.addFile(path.join(configPath, 'literals.json'), null, false)
+
+var arg = (process.argv.length >  2) ? process.argv[2] : null
+var language = cm.config.bot.defaultLanguage
+var indexHelp = (arg) ? contains( cm.config.help.commands
+                              , { "key": "name", "value": arg }
+                              , "index")
+                    : true
+
+// Displaying detailed help
+if (arg) {
+  if (indexHelp == -1) console.log(cm.config.literals[language].noHelpError)
+  else console.log( cm.config.help.commands[indexHelp].name + " : "
+                  + cm.config.help.commands[indexHelp][language].longDescription)
+  return
+}
+
+// Displaying list of commands
+var message = ""
+for (var i = 0; i < cm.config.help.commands.length; i++) {
+  var command = cm.config.help.commands[i]
+  message += "/" + command.name + " - " + command[language].shortDescription
+  if (i == cm.config.help.commands.length - 1) console.log(message)
+  else message += '\n'
+}
