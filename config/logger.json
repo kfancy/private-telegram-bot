@@ -4,7 +4,7 @@
       "type":"Console"
     , "enabled": true
     , "colorize": false
-    , "level": "info"
+    , "level": "debug"
     , "formatter": "consoleFormatter"
     }
   , {
