@@ -1,6 +1,6 @@
 {
   "name": "private-telegram-bot"
-, "version": "0.0.3"
+, "version": "0.0.4"
 , "description": "Selective access telegram bots builder"
 , "keywords": ["telegram", "bot", "private", "selective", "builder"]
 , "author": "Guillermo Peña <guillermo.pena.cardano@gmail.com>"
