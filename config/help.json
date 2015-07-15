@@ -31,5 +31,13 @@
                 , "longDescription": "Remove execute permission of a user.\nIt can't longer use your bot"
                 }
       }
+    , { "name": "about"
+        , "es": { "shortDescription": "Info sobre este bot"
+                , "longDescription": "Info sobre este software y su autor\nQuien esta detrás de todo esto? ;)"
+                }
+        , "en": { "shortDescription": "Info about this bot"
+                , "longDescription": "Info about this software and his author\nWho is behind of this? ;)"
+                }
+      }
   ]
 }
