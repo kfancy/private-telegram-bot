@@ -2,10 +2,10 @@
 
 /* ___________________________________________________________________________
 
-  Module: private-telegram-bot.js   Version: v0.0.2
+  Module: private-telegram-bot.js   Version: v0.0.3
   Repository: http://github.com/GuillermoPena/private-telegram-bot
   Author: Guillermo Peña (guillermo.pena.cardano@gmail.com)
-  Last update: 15/07/2015
+  Last update: 16/07/2015
 
   Selective access telegram bots builder
 
@@ -27,7 +27,8 @@ logger.prepareMessage = function(message, to) {
       message.text = message.text.substring(0, message.text.length-1)
 
     // Adding header in every line
-    var header = "[msg_" + message.message_id + "] @" + message.from.username
+    var username = (!message.from.username) ? message.from.id : message.from.username
+    var header = "[msg_" + message.message_id + "] @" + username
     header += (to) ? " > @" + to + " : " : " : "
     messageToLog += header
     if (message.text) {
