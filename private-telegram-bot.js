@@ -74,11 +74,13 @@ process.on('SIGTSTP', function() {
   logger.print('warn', 'Stopping Bot due to SIGTSTP signal')
   process.exit(1)
 })
+/*
 process.on('uncaughtException', function(e) {
   logger.print('error', 'Stopping Bot due to uncaughtException')
   logger.print('error', require('util').inspect(e))
   process.exit(128)
 })
+*/
 
 // Launching bot...
 var Bot = require(__dirname + '/lib/bot.js') // Bot Library
