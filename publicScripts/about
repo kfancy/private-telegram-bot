@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "Built with private-telegram-bot v0.0.5\nAuthor: Guillermo Peña Cardaño\nguillermo.pena.cardano@gmail.com"
+echo "Built with private-telegram-bot v0.0.8\nAuthor: Guillermo Peña Cardaño\nguillermo.pena.cardano@gmail.com"
